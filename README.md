@@ -1,3 +1,61 @@
+# Description
+
+This is an infrastructure repo of an aks cluster and a linux virtual machine to be an agent for a ci/cd pipeline.
+
+
+---
+
+## Notes
+
+
+
+As part of a DevOps bootcamp is sela accademy [Sela DevOps Bootcamp Page](https://rhinops.io/bootcamp).
+
+This code implimants the following:
+
+- Module folder that containes modules detailed below
+   
+- An azure kubernates cluster 
+- An azure container regestery 
+
+
+this repo is used indepandetly to deploy the Webapp with a ci-cd piipelin e from [bootcamp-app aks pipeline](https://dev.azure.com/oderafiBigspender/_git/BOOTCAMP-APP%20K8S).
+
+---
+
+## Deployment
+
+First you need to install terraform and connect to azure provider as explained in
+[Install Terraform - HashiCorp Learn](https://learn.hashicorp.com/tutorials/terraform/install-cli).
+
+Inorder to run the template you will need to create a terraform.tfvar file to update your secret data.
+
+![image](images/terraformTfvarsImage.jpg)
+
+Using git, clone the repository to your local machine.
+
+_and run the foolowing commmand:_
+
+- Initialize Terraform working directory
+
+  terraform init
+
+- To deploy the enviroment :
+
+  > terraform plan 
+
+  > terraform apply
+
+- To destroy the enviroment:
+
+  > terraform destroy
+
+
+
+
+
+
+---
 ## Requirements
 
 | Name | Version |
