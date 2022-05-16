@@ -34,7 +34,7 @@ resource "azurerm_linux_virtual_machine" "linux_vm_Name" {
   admin_username                  = var.admin_user_name
   admin_password                  = var.admin_password
   disable_password_authentication = false
-  custom_data                     = filebase64("Modules/scripts/AgentConfigScript.sh") 
+  custom_data                     = filebase64("Modules/scripts/AgentConfigScript.sh")
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
